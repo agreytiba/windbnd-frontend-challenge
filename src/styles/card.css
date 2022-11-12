@@ -1,58 +1,57 @@
-.card{
-    width: 350px;
-    height: 269px;
-    margin-block: 1rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: .6rem;
+.card {
+	width: 300px;
+	height: 269px;
+	margin-block: 1rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: .6rem;
 }
-.card img{
-     width: 395px;
-    height: 269px;
- border-radius: 24px;
- -webkit-border-radius: 24px;
- -moz-border-radius: 24px;
- -ms-border-radius: 24px;
- -o-border-radius: 24px;
+.card img {
+	width: 395px;
+	height: 269px;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
 }
-.card .card-items{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.card .card-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-.card .card-items button{
-      color: #4F4F4F;
-      border: 1px solid #4F4F4F;
-      background: none;
-      width: 100px;
-      height: 28px;
-      border-radius:12px;
-      -webkit-border-radius:12px;
-      -moz-border-radius:12px;
-      -ms-border-radius:12px;
-      -o-border-radius:12px;
+.card .card-items button {
+	color: #4f4f4f;
+	border: 1px solid #4f4f4f;
+	background: none;
+	width: 100px;
+	height: 28px;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px;
+	-o-border-radius: 12px;
 }
-.card .card-items .description{
-    color: #828282;
-    width: 181px;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 500;
-    width: 181px;
+.card .card-items .description {
+	color: #828282;
+	width: 181px;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 500;
+	width: 181px;
 }
-.card .card-items span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 0.3rem;
-    font-size: 14px;
+.card .card-items span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 0.3rem;
+	font-size: 14px;
 }
-.card .card-items .star-icon{
-    color: #EB5757B8;
+.card .card-items .star-icon {
+	color: #EB5757B8;
 }
-.card h2{
-   
-    font-size:16px;
-    font-weight: 600;
-    line-height: 20px;
+.card h2 {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
 }
