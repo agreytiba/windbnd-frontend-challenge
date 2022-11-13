@@ -9,7 +9,7 @@ const Card = ({card}) => {
 		<div className="card">
 			<img src={img} alt={name} />
 			<section className="card-items">
-				{isSpecial && <button>{ special}</button>}
+				{isSpecial && <button>{special}</button>}
 				<p className="description">{ desc}</p>
 				<span>
 					<StarIcon className="star-icon" /> {rating}

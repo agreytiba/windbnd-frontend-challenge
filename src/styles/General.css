@@ -45,4 +45,28 @@ footer{
 
 }
 }
+@media only screen and (max-width: 710px){
+    .wrapper{
+    width: 100%;
+background-color: #fff;
+padding:0;
+}
+     .cards-collection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+     column-gap: none;
+     row-gap: none;
+     
+margin-top: 2rem;
+
+}
+
+.header{
+   flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+}
   

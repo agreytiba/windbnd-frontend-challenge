@@ -1,14 +1,14 @@
 import SearchIcon from '@mui/icons-material/Search';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import '../styles/navbar.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const Navbar = () => {
 	const [ searchCity, setSearchCity ] = useState(false);
 	const [ isAge, setIsAge ] = useState(false);
 	const [ isInputClicked, setIsInputClicked ] = useState(false);
 
-	// onclick the age selection input 
+	// onclick the age selection input
 	const handleAge = () => {
 		setIsAge(!isAge);
 		setSearchCity(false);
@@ -28,10 +28,9 @@ const Navbar = () => {
 			<section className={isInputClicked && (isAge || searchCity) ? 'new-search' : 'search'}>
 				<div>
 					<input type="text" placeholder="Helsinki, Finland" className="city" onClick={handleCity} />
-					{isInputClicked && <span className='location'>LOCATION</span>}
+					{/* {(isAge||searchCity) && <span className='location'>LOCATION</span>} */}
 					{searchCity && (
 						<section className="city-popup">
-						
 							<ul type="none">
 								<li>
 									<LocationOnIcon />
@@ -54,7 +53,7 @@ const Navbar = () => {
 				</div>
 				<div>
 					<input type="text" placeholder="Add guests" onClick={handleAge} className="add-guest" />
-					{isInputClicked && <span className='guests'>GUESTS</span>}
+					{/* {(isAge|| searchCity)&& <span className='guests'>GUESTS</span>} */}
 					{isAge && (
 						<div className="age-range">
 							<section className="guest-type">
@@ -74,9 +73,8 @@ const Navbar = () => {
 				</div>
 
 				<button className="search-button">
-		
 					<SearchIcon className="search-icon" />
-					{isInputClicked &&<span>search</span>}
+					{(isAge || searchCity) && <span>search</span>}
 				</button>
 			</section>
 		</div>

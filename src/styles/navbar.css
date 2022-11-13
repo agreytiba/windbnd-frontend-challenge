@@ -17,46 +17,49 @@
 	-o-border-radius: 16px;
 }
 
-.search input{
+.search input {
 	background-color: #fff;
 	border: none;
+	padding: 5%;
 	font-size: 14px;
-	height: 50px;
-	
+	height: 70px;
 }
 .search input:focus {
 	outline: 1px solid #333;
 	border: none;
 }
+.new-search input::-webkit-input-placeholder,
+.search input::-webkit-input-placeholder {
+	padding-left: 5%;
+}
 
 /*  when the input button is clicked */
 .new-search {
 	display: flex;
+	flex-direction: row;
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-	width:80vw;
-	border-radius:16px;
-	-webkit-border-radius:16px;
-	-moz-border-radius:16px;
-	-ms-border-radius:16px;
-	-o-border-radius:16px;
+	width: 80vw;
+	border-radius: 16px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	-ms-border-radius: 16px;
+	-o-border-radius: 16px;
 }
-.new-search input{
+.new-search input {
 	background-color: #fff;
 	border: none;
 	font-size: 14px;
-	height: 50px;
-	width:35vw;
+	height: 70px;
+	width: 35vw;
 }
 
 /* ===================
 search city
 =====================*/
 .city {
-   
 	color: #333333;
 	font-size: 14px;
-	line-height: 18px;
-	text-align: center;
+	height: 18px;
 	width: 100%;
 	flex: 2;
 	border-radius: 16px 0 0 16px;
@@ -69,48 +72,50 @@ search city
 /* city popup onclick */
 .city-popup {
 	position: absolute;
-    top: 110px;
-	left:0;
+	top: 110px;
+	left: 0;
 	padding: 1rem;
-	width:100%;
-    background-color: #fff;
-    z-index: 99;
-	 
+	width: 100%;
+	background-color: #fff;
+	z-index: 99;
 }
-.location{
+.location {
 	position: absolute;
 	font-size: 9px;
 	height: 11px;
-	top: 30px;
-	left: 50px;
+	top: 45px;
+	left: 10.5%;
+	color: #333333;
 }
 .city-popup ul {
 	line-height: 4;
 	padding-left: 12vw;
 }
-.city-popup ul li{
+.city-popup ul li {
 	display: flex;
 	align-items: center;
 	column-gap: 4px;
-	
 }
 
 /* ===============
  add guest
 ================ */
- .add-guest {
+.add-guest {
 	position: relative;
 	margin-left: 0.2rem;
 	flex: 2;
 	border-left: 1px solid #f2f2f2;
-	text-align: center;
-	width:100%;
-	color: #BDBDBD;
+
+	width: 100%;
+	color: #bdbdbd;
 }
 
-.guests{
+.guests {
 	position: absolute;
-	top: 0;
+	top: 48px;
+	left: 51%;
+	font-size: 9px;
+	color: #000;
 }
 /* choose age range popup */
 .age-range {
@@ -120,15 +125,15 @@ search city
 	z-index: 99;
 	background-color: #fff;
 	width: 100%;
-	padding-left: 50vw ;
-    padding-bottom: 10px;
+	padding-left: 50vw;
+	padding-bottom: 10px;
 }
 .guest-type {
 	padding: 20px;
 	line-height: 2;
 }
-.guest-type p{
-	color: #BDBDBD;
+.guest-type p {
+	color: #bdbdbd;
 }
 .guest-type span {
 	margin-inline: 8px;
@@ -140,14 +145,16 @@ search city
 	background: none;
 }
 .search-button {
-	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: none;
 	border: none;
 	border-left: 1px solid #f2f2f2;
-	height: 50px;
+	height: 70px;
 	width: 100px;
+	padding-inline: 10px;
 	border-radius: 0 16px 16px 0;
-	text-align: center;
 	color: #eb5757;
 	-webkit-border-radius: 0 16px 16px 0;
 	-moz-border-radius: 0 16px 16px 0;
@@ -156,11 +163,36 @@ search city
 }
 
 /*   popup on click input */
-.search-button span{
-	position: absolute;
-	top: 0;
-	left: 0;
-	font-size: 14px;
+.search-button span {
+	font-size: 18px;
 	height: 18px;
-	color: #F2F2F2;
+}
+@media only screen and (max-width:600px){
+.nav-container {
+	flex-direction: column;
+	align-items: flex-start;
+	
+}
+.nav-container img{
+	margin-bottom: 2rem;
+}
+.search {
+	
+	width: 100%;
+	height: 50px;
+}
+.search input {
+	height: 50px;
+}
+.new-search{
+	flex-direction: column;
+	width: 100%;
+}
+.new-search input{
+	height: 50px;
+	width: 100%;
+}
+.city-popup{
+	
+}
 }
