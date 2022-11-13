@@ -2,44 +2,57 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 4rem 10px 2rem 10px;
+	padding: 2rem 10px;
+	position: relative;
 }
 .search {
 	display: flex;
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-	width: 600px;
+	box-sizing: border-box;
+	width: 400px;
 	border-radius: 16px;
 	-webkit-border-radius: 16px;
 	-moz-border-radius: 16px;
 	-ms-border-radius: 16px;
 	-o-border-radius: 16px;
 }
-/* .new-search {
+
+.search input{
+	background-color: #fff;
+	border: none;
+	font-size: 14px;
+	height: 50px;
+	
+}
+.search input:focus {
+	outline: 1px solid #333;
+	border: none;
+}
+
+/*  when the input button is clicked */
+.new-search {
 	display: flex;
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-	width:80%;
+	width:80vw;
 	border-radius:16px;
 	-webkit-border-radius:16px;
 	-moz-border-radius:16px;
 	-ms-border-radius:16px;
 	-o-border-radius:16px;
-} */
-.search input,.new-search input{
+}
+.new-search input{
 	background-color: #fff;
 	border: none;
 	font-size: 14px;
 	height: 50px;
-}
-.search input:focus,.new-search input:focus {
-	outline: 1px solid #333;
-	border: none;
+	width:35vw;
 }
 
 /* ===================
 search city
 =====================*/
 .city {
-    position: relative;
+   
 	color: #333333;
 	font-size: 14px;
 	line-height: 18px;
@@ -52,21 +65,34 @@ search city
 	-ms-border-radius: 16px 0 0 16px;
 	-o-border-radius: 16px 0 0 16px;
 }
+
+/* city popup onclick */
 .city-popup {
 	position: absolute;
-    top: 130px;
+    top: 110px;
+	left:0;
 	padding: 1rem;
-	width: 100%;
+	width:100%;
     background-color: #fff;
     z-index: 99;
+	 
+}
+.location{
+	position: absolute;
+	font-size: 9px;
+	height: 11px;
+	top: 30px;
+	left: 50px;
 }
 .city-popup ul {
-	line-height: 3;
+	line-height: 4;
+	padding-left: 12vw;
 }
 .city-popup ul li{
 	display: flex;
 	align-items: center;
 	column-gap: 4px;
+	
 }
 
 /* ===============
@@ -79,21 +105,33 @@ search city
 	border-left: 1px solid #f2f2f2;
 	text-align: center;
 	width:100%;
+	color: #BDBDBD;
 }
 
+.guests{
+	position: absolute;
+	top: 0;
+}
+/* choose age range popup */
 .age-range {
 	position: absolute;
-	top: 130px;
+	top: 125px;
+	left: 0;
 	z-index: 99;
 	background-color: #fff;
 	width: 100%;
+	padding-left: 50vw ;
+    padding-bottom: 10px;
 }
 .guest-type {
 	padding: 20px;
 	line-height: 2;
 }
+.guest-type p{
+	color: #BDBDBD;
+}
 .guest-type span {
-	margin-inline: 5px;
+	margin-inline: 8px;
 	color: #333333;
 }
 .guest-type button {
@@ -102,6 +140,7 @@ search city
 	background: none;
 }
 .search-button {
+	position: relative;
 	background-color: none;
 	border: none;
 	border-left: 1px solid #f2f2f2;
@@ -114,4 +153,14 @@ search city
 	-moz-border-radius: 0 16px 16px 0;
 	-ms-border-radius: 0 16px 16px 0;
 	-o-border-radius: 0 16px 16px 0;
+}
+
+/*   popup on click input */
+.search-button span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 14px;
+	height: 18px;
+	color: #F2F2F2;
 }

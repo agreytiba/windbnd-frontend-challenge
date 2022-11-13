@@ -16,9 +16,12 @@
 	-o-border-radius: 24px;
 }
 .card .card-items {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	width: 100%;
+	column-gap:  5%;
+	
+
 }
 .card .card-items button {
 	color: #4f4f4f;
